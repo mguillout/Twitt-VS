@@ -138,16 +138,25 @@ UI = (function(){
 
 
    if ($('.inputG input').val().length <= 3) {
-      var combis = [ ['Jimi Hendrix', 'Stevie Ray Vaughan'], ['Sarkozy', 'Obama'], ['White', 'Black'], ['Red', 'Green'], ['Dead', 'Alive'] , ['iphone', 'Android'], ['Eat', 'Drink']];
+      var combis = [ ['Jimi Hendrix', 'Stevie Ray Vaughan'], 
+                     ['Sarkozy', 'Obama'], 
+                     ['White', 'Black'], 
+                     ['Red', 'Green'], 
+                     ['Dead', 'Alive'] , 
+                     ['Iphone', 'Android'], 
+                     ['Mac', 'Windows'],
+                     ['Javascript', 'Java'],
+                     ['Eat', 'Drink']];
+
       var indice = parseInt(Math.random() * combis.length);
       var maCombi = combis[indice];
       $('.inputG input').val(maCombi[0]);
       $('.inputD input').val(maCombi[1]);
    }
 
-   if ($('.inputG input').val().length > 3) { actuG(); }
+   if ($('.inputG input').val().length > 1) { actuG(); }
    
-   if ($('.inputD input').val().length > 3) { actuD(); }
+   if ($('.inputD input').val().length > 1) { actuD(); }
 
    $('.inputG input').bind('keyup', function(e){
      var elt = $(this);
