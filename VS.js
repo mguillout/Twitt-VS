@@ -133,36 +133,28 @@ UI = (function(){
    var keyupPlusG = keyupP();
    var keyupPlusD = keyupP();
 
-   if (getUrlVars()["inputG"]) {
-      $('.inputG input').val(getUrlVars()["inputG"]);
-   }
-   if (getUrlVars()["inputD"]) {
-      $('.inputD input').val(getUrlVars()["inputD"]);
-   }
+   if (getUrlVars()["inputG"]) { $('.inputG input').val(getUrlVars()["inputG"]); }
+   if (getUrlVars()["inputD"]) { $('.inputD input').val(getUrlVars()["inputD"]); }
 
 
-   if ($('.inputG input').val().length > 3) {
-     actuG();
-   }
+   if ($('.inputG input').val().length > 3) { actuG(); }
    
-   if ($('.inputD input').val().length > 3) {
-     actuD();
-   }
+   if ($('.inputD input').val().length > 3) { actuD(); }
 
    $('.inputG input').bind('keyup', function(e){
      var elt = $(this);
-/*     keyupPlusG(elt, function(){ 
+     keyupPlusG(elt, function(){ 
        actuG();
      });
-*/
+
    });
 
    $('.inputD input').bind('keyup', function(e){
      var elt = $(this);
-/*     keyupPlusG(elt, function(){ 
+     keyupPlusG(elt, function(){ 
        actuD();
      });
-*/
+
    });
 
    $('.run').bind('click', function(){
