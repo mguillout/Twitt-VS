@@ -166,7 +166,7 @@ UI = (function(){
    });
 
    $('.run').bind('click', function(){
-       document.location.href = "/VS.html?" + "inputG=" + escape($('.inputG input').val()) + "&inputD=" + escape($('.inputD input').val());
+       document.location.href = "/index.html?" + "inputG=" + escape($('.inputG input').val()) + "&inputD=" + escape($('.inputD input').val());
     });
   };
 
