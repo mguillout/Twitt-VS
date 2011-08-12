@@ -138,10 +138,11 @@ UI = (function(){
 
 
    if ($('.inputG input').val().length <= 3) {
-      var combis = [ ['Jimi Hendrix', 'Stevie Ray Vaughan'], 
+      var combis = [ ['Jimi Hendrix', 'Amy Winehouse'], 
                      ['Sarkozy', 'Obama'], 
                      ['White', 'Black'], 
                      ['Red', 'Green'], 
+                     ['Blue', 'Orange'], 
                      ['Dead', 'Alive'] , 
                      ['Iphone', 'Android'], 
                      ['Mac', 'Windows'],
